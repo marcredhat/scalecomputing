@@ -32,6 +32,6 @@ mkdir /docker-storage
 mkdir /longhorn-storage
 mkdir /local-storage
 
-mount /dev/sdb1 /docker-storage
-mount /dev/sdc1 /longhorn-storage
-mount /dev/sdd1 /local-storage
+mount /dev/vdb1 /docker-storage
+mount /dev/vdc1 /longhorn-storage
+mount /dev/vdd1 /local-storage
