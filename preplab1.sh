@@ -22,3 +22,16 @@ mkdir /data/data3
 mount /dev/vdb1 /data/data1
 mount /dev/vdc1 /data/data2
 mount /dev/vdd1 /data/data3
+
+#For ECS:
+mkfs.xfs /dev/sdb1
+mkfs.xfs /dev/sdc1
+mkfs.xfs /dev/sdd1
+
+mkdir /docker-storage
+mkdir /longhorn-storage
+mkdir /local-storage
+
+mount /dev/sdb1 /docker-storage
+mount /dev/sdc1 /longhorn-storage
+mount /dev/sdd1 /local-storage
