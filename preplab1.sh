@@ -11,3 +11,14 @@ fuser -kim /home
 umount -f /home
 lvremove -y /dev/centos/home
 lvextend -An -l +100%FREE -r /dev/centos/root
+
+
+#For Base:
+mkdir /data
+mkdir /data/data1
+mkdir /data/data2
+mkdir /data/data3
+
+mount /dev/vdb1 /data/data1
+mount /dev/vdc1 /data/data2
+mount /dev/vdd1 /data/data3
