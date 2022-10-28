@@ -24,10 +24,6 @@ mount /dev/vdc1 /data/data2
 mount /dev/vdd1 /data/data3
 
 #For ECS:
-mkfs.xfs /dev/vdb1
-mkfs.xfs /dev/vdc1
-mkfs.xfs /dev/vdd1
-
 mkdir /docker-storage
 mkdir /longhorn-storage
 mkdir /local-storage
