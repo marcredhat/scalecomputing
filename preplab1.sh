@@ -93,9 +93,8 @@ UUID=e93c9d87-544d-4541-9b1b-cef94fb7831d /boot                   xfs     defaul
 UUID=CAA6-6FA3          /boot/efi               vfat    umask=0077,shortname=winnt 0 0
 #/dev/mapper/centos-home /home                   xfs     defaults        0 0
 /dev/mapper/centos-swap swap                    swap    defaults        0 0
-/dev/vdb1 /docker-storage                       xfs    defaults        0 0
-/dev/vdc1 /longhorn-storage                       xfs    defaults        0 0
-/dev/vdd1 /local-storage                       xfs    defaults        0 0
-
+/dev/vdb1 /docker                    xfs    defaults        0 0
+/dev/vdc1 /ecs/local-storage                       xfs    defaults        0 0
+/dev/vdd1 /ecs/longhorn-storage                       xfs    defaults        0 0
 
 Test with mount -a
