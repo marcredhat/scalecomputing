@@ -1,6 +1,6 @@
 
 yum -y install java-11-openjdk cloudera-manager-agent cloudera-manager-daemons
-echo never > /sys/kernel/mm/transparent_hugepage/defrag" && "echo never > /sys/kernel/mm/transparent_hugepage/enabled" 
+echo never > /sys/kernel/mm/transparent_hugepage/defrag && echo never > /sys/kernel/mm/transparent_hugepage/enabled
 sysctl -w vm.swappiness=1
 useradd sentry
 
