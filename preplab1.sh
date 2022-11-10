@@ -44,6 +44,7 @@ mount /dev/vdd1 /data/data3
 #mount /dev/vdc1 /longhorn-storage
 #mount /dev/vdd1 /local-storage
 
+mkdir /ecs
 mkdir /docker
 mkdir /ecs/local-storage
 mkdir /ecs/longhorn-storage
