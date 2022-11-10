@@ -11,7 +11,7 @@ ip route add default via 10.5.11.1 dev eth0 proto dhcp metric 100
 rpm -ivh http://mirror.centos.org/centos/7/os/x86_64/Packages/psmisc-22.20-17.el7.x86_64.rpm
 fuser -kim /home
 umount -f /home
-lvremove -y /dev/centos/home
+lvremove -f -y /dev/centos/home
 lvextend -An -l +100%FREE -r /dev/centos/root
 
 
