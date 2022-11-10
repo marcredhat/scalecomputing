@@ -1,3 +1,6 @@
+
+ yum -y install java-11-openjdk cloudera-manager-agent cloudera-manager-daemons
+
 printf "o\nn\np\n1\n\n\nw\n" | fdisk /dev/vdb
 printf "o\nn\np\n1\n\n\nw\n" | fdisk /dev/vdc
 printf "o\nn\np\n1\n\n\nw\n" | fdisk /dev/vdd
