@@ -40,9 +40,15 @@ mkdir /docker-storage
 mkdir /longhorn-storage
 mkdir /local-storage
 
-mount /dev/vdb1 /docker-storage
-mount /dev/vdc1 /longhorn-storage
-mount /dev/vdd1 /local-storage
+#mount /dev/vdb1 /docker-storage
+#mount /dev/vdc1 /longhorn-storage
+#mount /dev/vdd1 /local-storage
+umount -f /docker-storage
+umount -f /longhorn-storage
+umount -f /storage-storage
+mount /dev/vdb1 /docker
+mount /dev/vdc1 /ecs/local-storage
+mount /dev/vdd1 /ecs/longhorn-storage
 
 
 #remove firewalld and flush iptables on all machines
