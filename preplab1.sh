@@ -36,16 +36,20 @@ mount /dev/vdd1 /data/data3
 
 
 #For ECS:
-mkdir /docker-storage
-mkdir /longhorn-storage
-mkdir /local-storage
+#mkdir /docker-storage
+#mkdir /longhorn-storage
+#mkdir /local-storage
 
 #mount /dev/vdb1 /docker-storage
 #mount /dev/vdc1 /longhorn-storage
 #mount /dev/vdd1 /local-storage
+
+mkdir /docker
+mkdir /ecs/local-storage
+mkdir /ecs/longhorn-storage
 umount -f /docker-storage
 umount -f /longhorn-storage
-umount -f /storage-storage
+umount -f /local-storage
 mount /dev/vdb1 /docker
 mount /dev/vdc1 /ecs/local-storage
 mount /dev/vdd1 /ecs/longhorn-storage
